@@ -1,0 +1,67 @@
+# Content for amigo-labs.dev/trommel/ — format: https://github.com/amigo-labs/website/blob/main/docs/project-data.md
+schema: 1
+slug: trommel
+name: amigo-trommel
+status: planned
+accent: "#a66cff"
+tagline:
+  en: Game audio authoring with TypeScript as the source of truth
+  de: Game-Audio-Authoring mit TypeScript als Source of Truth
+summary:
+  en: >-
+    An all-in-one tool for game audio: sample-based voices, clickable drum patterns and Strudel
+    live coding in one app. Every voice, pattern and setting is TypeScript code — diffable,
+    type-safe and easy to share.
+  de: >-
+    Ein All-in-one-Werkzeug für Game-Audio: Sample-basierte Voices, klickbare Drum-Patterns und
+    Strudel-Live-Coding in einer App. Alle Voices, Patterns und Einstellungen sind TypeScript-Code –
+    diff-bar, typsicher und leicht zu teilen.
+about:
+  en: |
+    amigo-trommel runs as a PWA in the browser and as a desktop app via Tauri. It produces
+    `.trommel` bundles that the Amigo Engine plays directly, either pre-rendered or as live synthesis
+    with runtime modulation.
+
+    It is not a synthesizer from scratch, not a DAW and not a tracker. The specification is written;
+    implementation starts once Pincel reaches 1.0.
+  de: |
+    amigo-trommel läuft als PWA im Browser und als Desktop-App über Tauri. Es erzeugt
+    `.trommel`-Bundles, die die Amigo Engine direkt abspielt – entweder vorgerendert oder als
+    Live-Synthese mit Modulation zur Laufzeit.
+
+    Es ist kein Synthesizer von Grund auf, keine DAW und kein Tracker. Die Spezifikation steht; die
+    Umsetzung beginnt, sobald Pincel die Version 1.0 erreicht hat.
+platforms: [web, windows, macos, linux]
+license: TBD
+
+features:
+  - title: { en: Sample-based voices, de: Sample-basierte Voices }
+    text:
+      en: Import samples and shape them with envelopes, LFOs, filters and an FX chain, with Audacity-style waveform and spectrogram views, labels and selections.
+      de: Samples importieren und mit Hüllkurven, LFOs, Filtern und einer FX-Kette formen – mit Waveform- und Spektrogramm-Ansicht, Labels und Auswahl im Stil von Audacity.
+    status: planned
+  - title: { en: Patterns in grid and code, de: Patterns im Grid und als Code }
+    text:
+      en: Click patterns together in a step grid that writes Strudel code, or edit the Strudel code directly — two views on the same pattern.
+      de: Patterns in einem Step-Grid zusammenklicken, das Strudel-Code erzeugt, oder den Strudel-Code direkt bearbeiten – zwei Ansichten auf dasselbe Pattern.
+    status: planned
+  - title: { en: TypeScript as the source of truth, de: TypeScript als Source of Truth }
+    text:
+      en: Voices and patterns are TypeScript files in the project folder, not a proprietary format. Diff them in git, share them as npm packages, edit them in VS Code alongside the app.
+      de: Voices und Patterns sind TypeScript-Dateien im Projektordner, kein proprietäres Format. Sie lassen sich mit Git vergleichen, als npm-Pakete teilen und neben der App in VS Code bearbeiten.
+    status: planned
+  - title: { en: DSP in Rust, de: DSP in Rust }
+    text:
+      en: All audio processing runs in a Rust core compiled to WASM and native code, with a deterministic render path that is bit-identical across platforms for pre-rendering in CI.
+      de: Die gesamte Audioverarbeitung läuft in einem Rust-Kern, der nach WASM und nativ kompiliert wird – mit einem deterministischen Render-Pfad, der für das Vorrendern in der CI plattformübergreifend bit-identisch ist.
+    status: planned
+  - title: { en: Audio analysis, de: Audio-Analyse }
+    text:
+      en: Classic DSP analysis finds beats, onsets, loops and silence in samples.
+      de: Klassische DSP-Analyse findet Beats, Onsets, Loops und Stille in Samples.
+    status: planned
+  - title: { en: MIDI and engine export, de: MIDI und Engine-Export }
+    text:
+      en: MIDI in and out, patterns as .mid files, and .trommel bundles for the Amigo Engine.
+      de: MIDI-Ein- und -Ausgang, Patterns als .mid-Dateien und .trommel-Bundles für die Amigo Engine.
+    status: planned
